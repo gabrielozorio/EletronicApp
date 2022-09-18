@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.eletronicapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_sobreFragment"
+            app:destination="@id/sobreFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_menuAnalogFragment"
+            app:destination="@id/menuAnalogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sobreFragment"
+        android:name="com.example.eletronicapp.SobreFragment"
+        android:label="fragment_sobre"
+        tools:layout="@layout/fragment_sobre" >
+        <action
+            android:id="@+id/action_sobreFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuAnalogFragment"
+        android:name="com.example.eletronicapp.menuAnalogFragment"
+        android:label="fragment_menu_analog"
+        tools:layout="@layout/fragment_menu_analog" />
+</navigation>

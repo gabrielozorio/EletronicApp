@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EletronicApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="eletronica_analogica">Eletronica Analogica</string>
+    <string name="eletronica_digital">Eletronica Digital</string>
+    <string name="sobre">Sobre</string>
+    <string name="text_sobre">Feito por Gabriel Ozorio</string>
+    <string name="voltar_main_menu">Voltar</string>
+</resources>
