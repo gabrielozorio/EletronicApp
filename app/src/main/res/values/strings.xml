@@ -6,5 +6,8 @@
     <string name="eletronica_digital">Eletronica Digital</string>
     <string name="sobre">Sobre</string>
     <string name="text_sobre">Feito por Gabriel Ozorio</string>
-    <string name="voltar_main_menu">Voltar</string>
+    <string name="voltar">Voltar</string>
+    <string name="teo">Teoria</string>
+    <string name="exe">Exercícios</string>
+    <string name="sim">Simulador</string>
 </resources>

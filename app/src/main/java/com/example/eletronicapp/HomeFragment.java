@@ -64,25 +64,35 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-    View val = inflater.inflate(R.layout.fragment_home, container, false);
+    View fview = inflater.inflate(R.layout.fragment_home, container, false);
 
-   /* val.findViewById(R.id.buttonMenuAnalog).setOnClickListener(Navigation.findNavController(val).navigate(R.id.action_homeFragment_to_menuAnalogFragment))
+   /* fview.findViewById(R.id.buttonMenuAnalog).setOnClickListener(Navigation.findNavController(fview).navigate(R.id.action_homeFragment_to_menuAnalogFragment))
 */
-    final Button btnAnalog = (Button)val.findViewById(R.id.buttonMenuAnalog);
+    final Button btnAnalog = (Button)fview.findViewById(R.id.buttonMenuAnalog);
     btnAnalog.setOnClickListener(new View.OnClickListener()
         {
-            public void onClick(View val) {
-                Navigation.findNavController(val).navigate(R.id.action_homeFragment_to_menuAnalogFragment);
+            public void onClick(View fview) {
+                Navigation.findNavController(fview).navigate(R.id.action_homeFragment_to_menuAnalogFragment);
             }
         });
-    final Button btnSobre = (Button)val.findViewById(R.id.buttonMenuSobre);
+
+    final Button btnSobre = (Button)fview.findViewById(R.id.buttonMenuSobre);
     btnSobre.setOnClickListener(new View.OnClickListener()
         {
-            public void onClick(View val) {
-                Navigation.findNavController(val).navigate(R.id.action_homeFragment_to_sobreFragment);
+            public void onClick(View fview) {
+                Navigation.findNavController(fview).navigate(R.id.action_homeFragment_to_sobreFragment);
             }
         });
-    return val;
+
+    final Button btnDigital = (Button)fview.findViewById(R.id.buttonMenuDigital);
+        btnDigital.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View fview) {
+                Navigation.findNavController(fview).navigate(R.id.action_homeFragment_to_menuDigitalFragment);
+            }
+        });
+
+    return fview;
         /* return inflater.inflate(R.layout.fragment_home, container, false); */
     }
 
