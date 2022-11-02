@@ -43,12 +43,20 @@ public class menuAnalogFragment extends Fragment {
             }
         });
 
-
+/*
         final Button btnTeoAnalog = (Button)fview.findViewById(R.id.buttonTeoAnalog);
         btnTeoAnalog.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View fview) {
                 Navigation.findNavController(fview).navigate(R.id.action_menuAnalogFragment_to_teoAnalogFragment);
+            }
+        });
+*/
+        final Button btnTeoAnalog = (Button)fview.findViewById(R.id.buttonTeoAnalog);
+        btnTeoAnalog.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View fview) {
+                Navigation.findNavController(fview).navigate(R.id.action_menuAnalogFragment_to_pdfActivity3);
             }
         });
 

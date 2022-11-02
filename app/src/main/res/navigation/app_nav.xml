@@ -43,6 +43,9 @@
         <action
             android:id="@+id/action_menuAnalogFragment_to_exeAnalogFragment"
             app:destination="@id/exeAnalogFragment" />
+        <action
+            android:id="@+id/action_menuAnalogFragment_to_pdfActivity3"
+            app:destination="@id/pdfActivity" />
     </fragment>
     <fragment
         android:id="@+id/teoAnalogFragment"
@@ -87,4 +90,8 @@
             android:id="@+id/action_menuDigitalFragment_to_exeDigitalFragment2"
             app:destination="@id/exeDigitalFragment" />
     </fragment>
+    <activity
+        android:id="@+id/pdfActivity"
+        android:name="com.example.eletronicapp.PdfActivity"
+        android:label="PdfActivity" />
 </navigation>
