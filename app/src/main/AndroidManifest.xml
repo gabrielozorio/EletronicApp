@@ -14,8 +14,16 @@
         android:theme="@style/Theme.EletronicApp"
         tools:targetApi="31">
         <activity
+            android:name=".PdfActivity"
+            android:exported="false"
+            android:parentActivityName=".RecyclerActivity"/>
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".RecyclerActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

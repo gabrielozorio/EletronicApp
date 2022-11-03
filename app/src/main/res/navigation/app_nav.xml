@@ -92,6 +92,6 @@
     </fragment>
     <activity
         android:id="@+id/pdfActivity"
-        android:name="com.example.eletronicapp.PdfActivity"
+        android:name="com.example.eletronicapp.RecyclerActivity"
         android:label="PdfActivity" />
 </navigation>

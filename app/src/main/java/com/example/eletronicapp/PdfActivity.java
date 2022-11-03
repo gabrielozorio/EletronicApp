@@ -1,29 +1,41 @@
 package com.example.eletronicapp;
 
-import android.os.Bundle;
-import android.widget.LinearLayout;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
+import com.github.barteksc.pdfviewer.PDFView;
+import android.os.Bundle;
+import android.widget.Toast;
 
 public class PdfActivity extends AppCompatActivity {
 
-    RecyclerView Lista;
-    String nomePdfs[], descrPdfs[];
-
+    PDFView novoPdf;
+    String tituloArq;
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pdf_activity);
-        Lista = findViewById(R.id.ListaTeoAnalog);
-        nomePdfs = getResources().getStringArray(R.array.arq_dig);
+        setContentView(R.layout.activity_pdf);
+        getData();
+        novoPdf = findViewById(R.id.novopdf);
+        setData();
 
-        recyclerPdfAdapter adaptador = new recyclerPdfAdapter(this, nomePdfs, descrPdfs);
-        Lista.setAdapter(adaptador);
-        Lista.setLayoutManager(new LinearLayoutManager(this));
+    }
+
+    private void getData()
+    {
+        if(getIntent().hasExtra("nomArq"))
+        {
+            tituloArq = getIntent().getStringExtra("nomArq");
+            //tituloArq.concat(".pdf");
+
+        }
+        else
+        {
+            Toast.makeText(this,"no data.",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void setData()
+    {
+        novoPdf.fromAsset(tituloArq).load();
+
     }
 }

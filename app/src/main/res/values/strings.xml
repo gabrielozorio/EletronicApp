@@ -13,49 +13,49 @@
     <string name="titulo">Titulo</string>
 
     <string-array name="arq_dig">
-<!-- as strings tem os nomes dos arquivos que serao utilizados no pdfView-->
-        <item>bases</item>
-        <item>ab</item>
-        <item>tdm</item>
-        <item>portas</item>
-        <item>mapa</item>
-        <item>flipflop</item>
-        <item>asincsinc</item>
-        <item>me</item>
+        <!-- as strings tem os nomes dos arquivos que serao utilizados no pdfView-->
+        <item>bases.pdf</item>
+        <item>ab.pdf</item>
+        <item>tdm.pdf</item>
+        <item>portas.pdf</item>
+        <item>mapa.pdf</item>
+        <item>flipflop.pdf</item>
+        <item>asincsinc.pdf</item>
+        <item>me.pdf</item>
     </string-array>
 
     <string-array name="arq_analog">
 
-        <item>gef</item>
-        <item>kirchhoff</item>
-        <item>ohm</item>
-        <item>codCores</item>
-        <item>resistores</item>
-        <item>fontes</item>
-        <item>divisor</item>
-        <item>tellegen</item>
-        <item>nodmal</item>
-        <item>maxpot</item>
-        <item>thevenin</item>
-        <item>norton</item>
-        <item>capacitores</item>
+        <item>gef.pdf</item>
+        <item>kirchhoff.pdf</item>
+        <item>ohm.pdf</item>
+        <item>codCores.pdf</item>
+        <item>resistores.pdf</item>
+        <item>fontes.pdf</item>
+        <item>divisor.pdf</item>
+        <item>tellegen.pdf</item>
+        <item>nodmal.pdf</item>
+        <item>maxpot.pdf</item>
+        <item>thevenin.pdf</item>
+        <item>norton.pdf</item>
+        <item>capacitores.pdf</item>
         <!-- fim dos temas de circuitos eletricos
         inicio eletronica analogica -->
-        <item>diodo</item>
-        <item>zener</item>
-        <item>fonte</item>
-        <item>opamp</item>
-        <item>bjt</item>
-        <item>fet</item>
-        <item>ecomum</item>
-        <item>bcomum</item>
-        <item>ccomum</item>
-        <item>ampdif</item>
-        <item>ampme</item>
+        <item>diodo.pdf</item>
+        <item>zener.pdf</item>
+        <item>fonte.pdf</item>
+        <item>opamp.pdf</item>
+        <item>bjt.pdf</item>
+        <item>fet.pdf</item>
+        <item>ecomum.pdf</item>
+        <item>bcomum.pdf</item>
+        <item>ccomum.pdf</item>
+        <item>ampdif.pdf</item>
+        <item>ampme.pdf</item>
     </string-array>
 
-    <string-array name="top_dig">
-        <item>Bases Numericas></item>
+    <string-array name="exe_dig">
+        <item>exeBases.pdf></item>
 
     </string-array>
 </resources>
