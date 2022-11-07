@@ -1,5 +1,7 @@
 package com.example.eletronicapp;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -43,20 +45,14 @@ public class menuAnalogFragment extends Fragment {
             }
         });
 
-/*
         final Button btnTeoAnalog = (Button)fview.findViewById(R.id.buttonTeoAnalog);
         btnTeoAnalog.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View fview) {
-                Navigation.findNavController(fview).navigate(R.id.action_menuAnalogFragment_to_teoAnalogFragment);
-            }
-        });
-*/
-        final Button btnTeoAnalog = (Button)fview.findViewById(R.id.buttonTeoAnalog);
-        btnTeoAnalog.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View fview) {
-                Navigation.findNavController(fview).navigate(R.id.action_menuAnalogFragment_to_pdfActivity3);
+                Context ct = fview.getContext();
+                Intent recycler = new Intent(ct, RecyclerActivity.class);
+                recycler.putExtra("opcao",0);
+                ct.startActivity(recycler);
             }
         });
 
@@ -64,7 +60,10 @@ public class menuAnalogFragment extends Fragment {
         btnExeAnalog.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View fview) {
-                Navigation.findNavController(fview).navigate(R.id.action_menuAnalogFragment_to_exeAnalogFragment);
+                Context ct = fview.getContext();
+                Intent recycler = new Intent(ct, RecyclerActivity.class);
+                recycler.putExtra("opcao",1);
+                ct.startActivity(recycler);
             }
         });
         /* Escrever a parte do simulador */

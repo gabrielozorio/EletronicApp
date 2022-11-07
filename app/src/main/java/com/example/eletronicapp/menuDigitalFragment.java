@@ -1,5 +1,7 @@
 package com.example.eletronicapp;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -48,7 +50,10 @@ public class menuDigitalFragment extends Fragment {
         btnTeoria.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View fview) {
-                Navigation.findNavController(fview).navigate(R.id.action_menuDigitalFragment_to_teoDigitalFragment2);
+                Context ct = fview.getContext();
+                Intent recycler = new Intent(ct, RecyclerActivity.class);
+                recycler.putExtra("opcao",2);
+                ct.startActivity(recycler);
             }
         });
 
@@ -56,7 +61,10 @@ public class menuDigitalFragment extends Fragment {
         btnExe.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View fview) {
-                Navigation.findNavController(fview).navigate(R.id.action_menuDigitalFragment_to_exeDigitalFragment2);
+                Context ct = fview.getContext();
+                Intent recycler = new Intent(ct, RecyclerActivity.class);
+                recycler.putExtra("opcao",3);
+                ct.startActivity(recycler);
             }
         });
 

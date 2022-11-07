@@ -54,10 +54,8 @@ public class HomeFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        /*if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }*/
+
+
     }
 
     @Override
@@ -66,8 +64,6 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
     View fview = inflater.inflate(R.layout.fragment_home, container, false);
 
-   /* fview.findViewById(R.id.buttonMenuAnalog).setOnClickListener(Navigation.findNavController(fview).navigate(R.id.action_homeFragment_to_menuAnalogFragment))
-*/
     final Button btnAnalog = (Button)fview.findViewById(R.id.buttonMenuAnalog);
     btnAnalog.setOnClickListener(new View.OnClickListener()
         {
@@ -93,7 +89,6 @@ public class HomeFragment extends Fragment {
         });
 
     return fview;
-        /* return inflater.inflate(R.layout.fragment_home, container, false); */
     }
 
 

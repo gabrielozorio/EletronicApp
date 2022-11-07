@@ -9,10 +9,13 @@ public class PdfActivity extends AppCompatActivity {
 
     PDFView novoPdf;
     String tituloArq;
+    int modo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdf);
+
+
         getData();
         novoPdf = findViewById(R.id.novopdf);
         setData();
@@ -24,7 +27,7 @@ public class PdfActivity extends AppCompatActivity {
         if(getIntent().hasExtra("nomArq"))
         {
             tituloArq = getIntent().getStringExtra("nomArq");
-            //tituloArq.concat(".pdf");
+
 
         }
         else

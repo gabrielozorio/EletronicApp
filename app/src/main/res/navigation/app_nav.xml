@@ -37,43 +37,7 @@
         <action
             android:id="@+id/action_menuAnalogFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
-        <action
-            android:id="@+id/action_menuAnalogFragment_to_teoAnalogFragment"
-            app:destination="@id/teoAnalogFragment" />
-        <action
-            android:id="@+id/action_menuAnalogFragment_to_exeAnalogFragment"
-            app:destination="@id/exeAnalogFragment" />
-        <action
-            android:id="@+id/action_menuAnalogFragment_to_pdfActivity3"
-            app:destination="@id/pdfActivity" />
-    </fragment>
-    <fragment
-        android:id="@+id/teoAnalogFragment"
-        android:name="com.example.eletronicapp.teoAnalogFragment"
-        android:label="fragment_teo_analog"
-        tools:layout="@layout/fragment_teo_analog" />
-    <fragment
-        android:id="@+id/exeAnalogFragment"
-        android:name="com.example.eletronicapp.exeAnalogFragment"
-        android:label="fragment_exe_analog"
-        tools:layout="@layout/fragment_exe_analog" />
-    <fragment
-        android:id="@+id/teoDigitalFragment"
-        android:name="com.example.eletronicapp.teoDigitalFragment"
-        android:label="fragment_teo_digital"
-        tools:layout="@layout/fragment_teo_digital" >
-        <action
-            android:id="@+id/action_teoDigitalFragment_to_menuDigitalFragment"
-            app:destination="@id/menuDigitalFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/exeDigitalFragment"
-        android:name="com.example.eletronicapp.exeDigitalFragment"
-        android:label="fragment_exe_digital"
-        tools:layout="@layout/fragment_exe_digital" >
-        <action
-            android:id="@+id/action_exeDigitalFragment_to_menuDigitalFragment"
-            app:destination="@id/menuDigitalFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/menuDigitalFragment"
@@ -81,17 +45,7 @@
         android:label="fragment_menu_digital"
         tools:layout="@layout/fragment_menu_digital" >
         <action
-            android:id="@+id/action_menuDigitalFragment_to_teoDigitalFragment2"
-            app:destination="@id/teoDigitalFragment" />
-        <action
             android:id="@+id/action_menuDigitalFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
-        <action
-            android:id="@+id/action_menuDigitalFragment_to_exeDigitalFragment2"
-            app:destination="@id/exeDigitalFragment" />
     </fragment>
-    <activity
-        android:id="@+id/pdfActivity"
-        android:name="com.example.eletronicapp.RecyclerActivity"
-        android:label="PdfActivity" />
 </navigation>

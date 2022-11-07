@@ -12,7 +12,7 @@
     <string name="sim">Simulador</string>
     <string name="titulo">Titulo</string>
 
-    <string-array name="arq_dig">
+    <string-array name="teoDig">
         <!-- as strings tem os nomes dos arquivos que serao utilizados no pdfView-->
         <item>bases.pdf</item>
         <item>ab.pdf</item>
@@ -24,7 +24,20 @@
         <item>me.pdf</item>
     </string-array>
 
-    <string-array name="arq_analog">
+
+    <string-array name="exeDig">
+    <!-- as strings tem os nomes dos arquivos que serao utilizados no pdfView-->
+    <item>Ebases.pdf</item>
+    <item>Eab.pdf</item>
+    <item>Etdm.pdf</item>
+    <item>Eportas.pdf</item>
+    <item>Emapa.pdf</item>
+    <item>Eflipflop.pdf</item>
+    <item>Easincsinc.pdf</item>
+    <item>Eme.pdf</item>
+    </string-array>
+
+    <string-array name="teoAnalog">
 
         <item>gef.pdf</item>
         <item>kirchhoff.pdf</item>
@@ -54,8 +67,33 @@
         <item>ampme.pdf</item>
     </string-array>
 
-    <string-array name="exe_dig">
-        <item>exeBases.pdf></item>
+    <string-array name="exeAnalog">
 
+        <item>Egef.pdf</item>
+        <item>Ekirchhoff.pdf</item>
+        <item>Eohm.pdf</item>
+        <item>EcodCores.pdf</item>
+        <item>Eresistores.pdf</item>
+        <item>Efontes.pdf</item>
+        <item>Edivisor.pdf</item>
+        <item>Etellegen.pdf</item>
+        <item>Enodmal.pdf</item>
+        <item>Emaxpot.pdf</item>
+        <item>Ethevenin.pdf</item>
+        <item>Enorton.pdf</item>
+        <item>Ecapacitores.pdf</item>
+        <!-- fim dos temas de circuitos eletricos
+        inicio eletronica analogica -->
+        <item>Ediodo.pdf</item>
+        <item>Ezener.pdf</item>
+        <item>Efonte.pdf</item>
+        <item>Eopamp.pdf</item>
+        <item>Ebjt.pdf</item>
+        <item>Efet.pdf</item>
+        <item>Eecomum.pdf</item>
+        <item>Ebcomum.pdf</item>
+        <item>Eccomum.pdf</item>
+        <item>Eampdif.pdf</item>
+        <item>Eampme.pdf</item>
     </string-array>
 </resources>
