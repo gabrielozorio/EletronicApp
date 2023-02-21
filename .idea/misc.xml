@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/gabri/AndroidStudioProjects/EletronicApp2/app/src/main/res/layout/activity_analog_simulator.xml" value="0.18" />
+        <entry key="..\:/Users/gabri/AndroidStudioProjects/EletronicApp2/app/src/main/res/layout/activity_digital_simulator.xml" value="0.25" />
         <entry key="..\:/Users/gabri/AndroidStudioProjects/EletronicApp2/app/src/main/res/layout/activity_main.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/gabri/AndroidStudioProjects/EletronicApp2/app/src/main/res/layout/activity_pdf.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/gabri/AndroidStudioProjects/EletronicApp2/app/src/main/res/layout/fragment_home.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/gabri/AndroidStudioProjects/EletronicApp2/app/src/main/res/layout/fragment_menu_analog.xml" value="0.25" />
         <entry key="..\:/Users/gabri/AndroidStudioProjects/EletronicApp2/app/src/main/res/layout/fragment_menu_digital.xml" value="0.25" />
+        <entry key="..\:/Users/gabri/AndroidStudioProjects/EletronicApp2/app/src/main/res/layout/fragment_netlist.xml" value="0.2" />
         <entry key="..\:/Users/gabri/AndroidStudioProjects/EletronicApp2/app/src/main/res/layout/fragment_sobre.xml" value="0.1308876811594203" />
         <entry key="..\:/Users/gabri/AndroidStudioProjects/EletronicApp2/app/src/main/res/layout/fragment_teo_analog.xml" value="0.1" />
         <entry key="..\:/Users/gabri/AndroidStudioProjects/EletronicApp2/app/src/main/res/layout/pdf_activity.xml" value="0.1" />

@@ -6,6 +6,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,6 +16,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
+
+        /*static {
+            System.loadLibrary("diglib");
+        }*/
 
 
 }

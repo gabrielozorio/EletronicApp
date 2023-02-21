@@ -64,7 +64,7 @@ public class SobreFragment extends Fragment {
 
         View fview = inflater.inflate(R.layout.fragment_sobre, container, false);
 
-        final Button btnVoltar = (Button)fview.findViewById(R.id.buttonVolt);
+        final Button btnVoltar = fview.findViewById(R.id.buttonVolt);
         btnVoltar.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View fview) {

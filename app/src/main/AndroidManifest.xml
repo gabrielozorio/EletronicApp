@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.eletronicapp">
+    package="com.example.eletronicapp" >
 
     <application
         android:allowBackup="true"
@@ -12,18 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EletronicApp"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
             android:name=".PdfActivity"
             android:exported="false"
-            android:parentActivityName=".RecyclerActivity"/>
+            android:parentActivityName=".RecyclerActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".RecyclerActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

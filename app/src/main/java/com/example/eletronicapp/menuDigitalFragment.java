@@ -20,12 +20,6 @@ public class menuDigitalFragment extends Fragment {
         // Required empty public constructor
     }
 
-    // TODO: Rename and change types and number of parameters
-    public static menuDigitalFragment newInstance() {
-        menuDigitalFragment fragment = new menuDigitalFragment();
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +32,7 @@ public class menuDigitalFragment extends Fragment {
         View fview = inflater.inflate(R.layout.fragment_menu_digital, container, false);
 
 
-        final Button btnVoltar = (Button)fview.findViewById(R.id.buttonVolt2);
+        final Button btnVoltar = fview.findViewById(R.id.buttonVolt2);
         btnVoltar.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View fview) {
@@ -46,7 +40,7 @@ public class menuDigitalFragment extends Fragment {
             }
         });
 
-        final Button btnTeoria = (Button)fview.findViewById(R.id.buttonTeoDigital);
+        final Button btnTeoria = fview.findViewById(R.id.buttonTeoDigital);
         btnTeoria.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View fview) {
@@ -57,7 +51,7 @@ public class menuDigitalFragment extends Fragment {
             }
         });
 
-        final Button btnExe = (Button)fview.findViewById(R.id.buttonExeDigital);
+        final Button btnExe = fview.findViewById(R.id.buttonExeDigital);
         btnExe.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View fview) {
@@ -68,14 +62,6 @@ public class menuDigitalFragment extends Fragment {
             }
         });
 
-        /*final Button btnVoltar = (Button)fview.findViewById(R.id.buttonVolt2);
-        btnVoltar.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View fview) {
-                Navigation.findNavController(fview).navigate(R.id.action_menuDigitalFragment_to_homeFragment);
-            }
-        });*/
-        // Inflate the layout for this fragment
         return fview;
     }
 }
