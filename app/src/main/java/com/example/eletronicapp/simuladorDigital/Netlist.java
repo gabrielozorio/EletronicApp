@@ -21,5 +21,7 @@ public class Netlist {
     public List<String> getLines() {
         return lines;
     }
+
+
 }
 

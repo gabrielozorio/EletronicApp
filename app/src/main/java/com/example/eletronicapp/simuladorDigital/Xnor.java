@@ -14,7 +14,7 @@ public class Xnor extends Component{
     public Xnor(boolean input1, boolean input2)
     {
         add();
-        setType(Type.gate);
+        setType(Type.XNOR);
         this.input1 = input1;
         this.input2 = input2;
         this.output = calculateOutput();

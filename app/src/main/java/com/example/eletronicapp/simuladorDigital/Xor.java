@@ -13,7 +13,7 @@ public class Xor extends Component{
     public Xor(boolean input1, boolean input2)
     {
         add();
-        setType(Type.gate);
+        setType(Type.XOR);
         this.input1 = input1;
         this.input2 = input2;
         this.output = calculateOutput();

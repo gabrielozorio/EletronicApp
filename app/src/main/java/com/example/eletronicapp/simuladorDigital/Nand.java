@@ -13,7 +13,7 @@ public class Nand extends Component {
     public Nand(boolean input1, boolean input2)
     {
         add();
-        setType(Component.Type.gate);
+        setType(Component.Type.NAND);
         this.input1 = input1;
         this.input2 = input2;
         this.output = calculateOutput(input1,input2);

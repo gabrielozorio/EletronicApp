@@ -13,8 +13,8 @@ public class Not extends Component{
     public Not(boolean input)
     {
         // add();
-        setType(Type.gate);
+        setType(Type.NOT);
         this.input = input;
-        this.output = calculateOutput();
+        this.output = calculateOutput(input);
     }
 }

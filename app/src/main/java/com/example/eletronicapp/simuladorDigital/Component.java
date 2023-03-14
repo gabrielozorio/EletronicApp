@@ -12,7 +12,8 @@ public class Component {
         return type;
     }
 
-    public enum Type{gate,ff}
+    // public enum Type{gate,ff}
+    public enum Type{NOT,OR,NOR,AND,NAND,XOR,XNOR,RS,JK,D,T}
 
     public void add(){
         active++;
@@ -21,5 +22,5 @@ public class Component {
     public Component(){
         // active++;
     }
-
+    
 }

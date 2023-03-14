@@ -10,10 +10,10 @@ public class Or extends Component{
         return input1 || input2;
     }
 
-    public And(boolean input1, boolean input2)
+    public Or(boolean input1, boolean input2)
     {
         add();
-        setType(Type.gate);
+        setType(Type.OR);
         this.input1 = input1;
         this.input2 = input2;
         this.output = calculateOutput(input1,input2);

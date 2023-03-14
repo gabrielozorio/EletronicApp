@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_menuAnalogFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_menuAnalogFragment_to_netlistAnalogFragment"
+            app:destination="@id/netlistAnalogFragment" />
 
     </fragment>
     <fragment
@@ -47,5 +50,18 @@
         <action
             android:id="@+id/action_menuDigitalFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_menuDigitalFragment_to_netlist"
+            app:destination="@id/netlist" />
     </fragment>
+    <fragment
+        android:id="@+id/netlist"
+        android:name="com.example.eletronicapp.NetlistDigitalFragment"
+        android:label="fragment_netlist"
+        tools:layout="@layout/fragment_netlist_digital" />
+    <fragment
+        android:id="@+id/netlistAnalogFragment"
+        android:name="com.example.eletronicapp.NetlistAnalogFragment"
+        android:label="fragment_netlist_analog"
+        tools:layout="@layout/fragment_netlist_analog" />
 </navigation>

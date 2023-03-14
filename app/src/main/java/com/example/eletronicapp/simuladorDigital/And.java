@@ -16,7 +16,7 @@ public class And extends Component {
 
     {
         add();
-        setType(Type.gate);
+        setType(Type.AND);
         this.input1 = input1;
         this.input2 = input2;
         this.output = calculateOutput(input1,input2);

@@ -25,7 +25,7 @@ public class JKflipflop extends Component{
 
     public JKflipflop(boolean j, boolean k, boolean clock) {
         add();
-        setType(Type.ff);
+        setType(Type.JK);
         this.j = j;
         this.k = k;
         this.clock = clock;

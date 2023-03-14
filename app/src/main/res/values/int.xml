@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="tamanhoTexto">16</integer>
+    <integer name="maximoLinhas">16</integer>
+    <integer name="maximoComponentes">16</integer>
+    <integer-array name="listaErros">
+       <item>0</item>
+    </integer-array>
+
+</resources>

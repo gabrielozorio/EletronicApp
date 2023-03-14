@@ -1,6 +1,6 @@
 package com.example.eletronicapp.simuladorDigital;
 
-public class RSflipflop {
+public class RSflipflop extends Component{
 
     private boolean s;
     private boolean r;
@@ -18,6 +18,7 @@ public class RSflipflop {
 
 
     public RSflipflop(boolean s, boolean r) {
+        setType(Type.RS);
         this.s = s;
         this.r = r;
         this.output = calculateOutput();
