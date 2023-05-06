@@ -1,4 +1,6 @@
+/*
 package com.example.eletronicapp.simuladorDigital;
+
 
 import java.util.List;
 
@@ -20,3 +22,4 @@ public class DigitalParser {
 
 
 }
+*/

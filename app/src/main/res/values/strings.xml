@@ -55,7 +55,7 @@
         inicio eletronica analogica -->
         <item>diodo.pdf</item>
         <item>zener.pdf</item>
-        <item>fonte.pdf</item>
+
         <item>opamp.pdf</item>
         <item>bjt.pdf</item>
         <item>fet.pdf</item>
@@ -64,6 +64,43 @@
         <item>ccomum.pdf</item>
         <item>ampdif.pdf</item>
         <item>ampme.pdf</item>
+    </string-array>
+
+    <string-array name="descAnalog">
+        <item>Grandezas Elétricas Fundamentais</item>
+        <item>Leis de Kirchhoff</item>
+        <item>Lei de Ohm</item>
+        <item>Codigo de Cores</item>
+        <item>Resistores</item>
+        <item>Fontes</item>
+        <item>Divisores(Tensão e Corrente)</item>
+        <item>Teorema de Tellegen</item>
+        <item>Análise de Nós e de Malhas</item>
+        <item>Máxima Transferencia de Potência</item>
+        <item>Teorema de Thevenin</item>
+        <item>Teorema de Norton</item>
+        <item>Capacitores</item>
+        <item>Diodo</item>
+        <item>Diodo Zener</item>
+        <item>Amplificador Operacional</item>
+        <item>Transistor Bipolar de Junção</item>
+        <item>Transistor de Efeito de Campo</item>
+        <item>Amplificador Emissor Comum</item>
+        <item>Amplificador Base Comum</item>
+        <item>Amplificador Coletor Comum</item>
+        <item>Amplificador Diferencial</item>
+        <item>Amplificador Multiplos Estágios</item>
+    </string-array>
+
+    <string-array name="descDigital">
+        <item>Bases Numéricas</item>
+        <item>Álgebra de Boole</item>
+        <item>Teorema de De Morgan</item>
+        <item>Portas Lógicas</item>
+        <item>Mapa de Karnaugh</item>
+        <item>Flip-Flops</item>
+        <item>Circuitos Síncronos e Assíncronos</item>
+        <item>Máquina de Estados</item>
     </string-array>
 
     <string-array name="exeAnalog">
@@ -85,7 +122,7 @@
         inicio eletronica analogica -->
         <item>Ediodo.pdf</item>
         <item>Ezener.pdf</item>
-        <item>Efonte.pdf</item>
+
         <item>Eopamp.pdf</item>
         <item>Ebjt.pdf</item>
         <item>Efet.pdf</item>

@@ -11,6 +11,8 @@ public class Variable {
         this.value = value;
     }
 
+    public boolean getValue() { return value; }
+
     public Variable() {
         add();
         value=false;

@@ -8,7 +8,26 @@ public class Xnor extends Component{
     private boolean output;
 
     private boolean calculateOutput(){
-        return ((input1&&input2)||(!input1&&!input2));
+        if (input1==input2)
+        {
+
+            return true;
+        }
+        else
+        {
+
+            return false;
+        }
+    }
+
+    public boolean getOutput(){
+        return output;
+    }
+
+    public void update(boolean n1, boolean n2){
+        input1=n1;
+        input2=n2;
+        output=calculateOutput();
     }
 
     public Xnor(boolean input1, boolean input2)

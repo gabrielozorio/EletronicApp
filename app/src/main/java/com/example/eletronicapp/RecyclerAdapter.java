@@ -1,5 +1,6 @@
 package com.example.eletronicapp;
 
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -16,6 +17,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
 
     String s1[], s2[];
     Context context;
+
     public RecyclerAdapter(Context ct, String nomes[], String descr[]) {
         context = ct;
         s1 = nomes; // nome dos arquivos
@@ -33,7 +35,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, @SuppressLint("RecyclerView") int position) {
-        holder.texto1.setText(s1[position]);
+        holder.texto1.setText(s2[position]);
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

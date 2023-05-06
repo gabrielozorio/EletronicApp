@@ -10,6 +10,15 @@ public class Not extends Component{
         return !input;
     }
 
+    private boolean calculateOutput() {
+        output=!input;
+        return output;
+    }
+    public void update(boolean novo) {
+        input=novo;
+        output=calculateOutput();
+    }
+
     public Not(boolean input)
     {
         // add();

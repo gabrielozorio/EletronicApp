@@ -3,6 +3,8 @@ package com.example.eletronicapp;
 import android.os.Bundle;
 import android.widget.Toast;
 
+
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,36 +12,40 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class RecyclerActivity extends AppCompatActivity {
 
-    RecyclerView Lista;
-    String nomePdfs[], descrPdfs[];
-    int modo;
-/* Ainda falta:
-*  Passar parametro que seleciona os vetores adequados
-*  Switch case escolhendo os vetores certos a partir do parametro recebido */
+    RecyclerView Lista; // declaracao do recycler view
+    String nomePdfs[], descrPdfs[]; // nomes e descricoes
+    int modo; // seleciona nomes e descricoes diferentes
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recycler_activity);
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(false);
+        }
         Lista = findViewById(R.id.Lista);
 
         getData();
         switch (modo){
             case 0:
                 nomePdfs = getResources().getStringArray(R.array.teoAnalog);
-              //  descrPdfs = getResources().getStringArray(R.array.exe_analog);
+                descrPdfs = getResources().getStringArray(R.array.descAnalog);
             break;
             case 1:
                 nomePdfs = getResources().getStringArray(R.array.exeAnalog);
-                //descrPdfs = getResources().getStringArray(R.array.exe_analog);
+                descrPdfs = getResources().getStringArray(R.array.descAnalog);
             break;
             case 2:
                 nomePdfs = getResources().getStringArray(R.array.teoDig);
-                //descrPdfs = getResources().getStringArray(R.array.exe_dig);
+                descrPdfs = getResources().getStringArray(R.array.descDigital);
             break;
             case 3:
                 nomePdfs = getResources().getStringArray(R.array.exeDig);
-                //descrPdfs = getResources().getStringArray(R.array.arq_dig);
+                descrPdfs = getResources().getStringArray(R.array.descDigital);
             break;
         }
 
@@ -63,5 +69,11 @@ public class RecyclerActivity extends AppCompatActivity {
             Toast.makeText(this,"no data.",Toast.LENGTH_SHORT).show();
         }
     }
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        // Navigate back to the previous fragment in the back stack
+        getSupportFragmentManager().popBackStack();
+        finish();
+    }
 }

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
@@ -60,6 +61,8 @@ public class menuAnalogFragment extends Fragment {
         btnExeAnalog.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View fview) {
+
+
                 Context ct = fview.getContext();
                 Intent recycler = new Intent(ct, RecyclerActivity.class);
                 recycler.putExtra("opcao",1);
@@ -67,6 +70,13 @@ public class menuAnalogFragment extends Fragment {
             }
         });
         /* Escrever a parte do simulador */
+        final Button btnSimulador = (Button)fview.findViewById(R.id.buttonSimAnalog);
+        btnSimulador.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_menuAnalogFragment_to_simuladorAnalogFragment);
+            }
+        });
     return fview;
     }
 }

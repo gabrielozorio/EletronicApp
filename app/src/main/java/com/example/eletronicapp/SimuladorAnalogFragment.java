@@ -8,12 +8,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import org.knowm.jspice.*;
+import org.knowm.jspice.netlist.Netlist;
+
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link NetlistAnalogFragment#newInstance} factory method to
+ * Use the {@link SimuladorAnalogFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class NetlistAnalogFragment extends Fragment {
+public class SimuladorAnalogFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +28,7 @@ public class NetlistAnalogFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public NetlistAnalogFragment() {
+    public SimuladorAnalogFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +38,11 @@ public class NetlistAnalogFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment NetlistAnalogFragment.
+     * @return A new instance of fragment SimuladorAnalogFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static NetlistAnalogFragment newInstance(String param1, String param2) {
-        NetlistAnalogFragment fragment = new NetlistAnalogFragment();
+    public static SimuladorAnalogFragment newInstance(String param1, String param2) {
+        SimuladorAnalogFragment fragment = new SimuladorAnalogFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +63,9 @@ public class NetlistAnalogFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_simulador_analog, container, false);
     }
+    Netlist
+
 }

@@ -1,4 +1,6 @@
+/*
 package com.example.eletronicapp.simuladorDigital;
+
 
 public class Circuit {
     private Component[] componentes;
@@ -21,3 +23,4 @@ public class Circuit {
 
 
 }
+*/

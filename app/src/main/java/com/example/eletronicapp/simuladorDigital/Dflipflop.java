@@ -2,33 +2,53 @@ package com.example.eletronicapp.simuladorDigital;
 
 public class Dflipflop extends Component{
 
-    private boolean clock;
+    //private boolean clock;
     private boolean data;
-    private boolean reset;
-    private boolean preset;
+    //private boolean reset;
+    //private boolean preset;
     private boolean output;
-    private boolean previous;
 
+    public boolean getData() {
+        return data;
+    }
 
-    public boolean calculateOutput(boolean inData,Clock relogio){
-        data = inData;
+    public boolean getOutput() {
+        return output;
+
+    }
+
+    public void updateData(boolean novo) {
+        data = novo;
+    }
+
+    public boolean updateOutput(Clock relogio){
+
         if (relogio.getTroca() == Clock.transition.UP)
         {
-            output = inData;
+            output = data;
         }
-        if (reset = true) {
-            output = false;
+      //  if (reset = true) {
+      //      output = false;
+      //  }
+       // if (preset = true) {output=true;}
+        return output;
+    }
+
+    public boolean updateOutput()
+    {
+        if(Component.relogio.getTroca()==Clock.transition.UP)
+        {
+            output = data;
         }
-        if (preset = true) {output=true;}
         return output;
     }
 
 
-    private Dflipflop(boolean data, boolean clock){
+    public Dflipflop(boolean data){
         add();
         setType(Type.D);
         this.data=data;
-        this.clock=clock;
+
         this.output=false;
     }
 }

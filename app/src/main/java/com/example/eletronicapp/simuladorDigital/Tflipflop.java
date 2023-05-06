@@ -4,48 +4,58 @@ public class Tflipflop extends Component {
 
     private boolean clock;
     private boolean data;
-    private boolean reset;
-    private boolean preset;
+    //private boolean reset;
+    //private boolean preset;
     private boolean output;
     private boolean previous;
 
-    public boolean calculateOutput(boolean inData,Clock relogio){
-        data = inData;
+    public boolean calculateOutput(Clock relogio){
+
         if (relogio.getTroca() == Clock.transition.UP)
         {
-            output = !inData;
+            output = !data;
         }
-        if (reset = true) {
-            output = false;
-        }
-        if (preset = true) {output=true;}
+      //  if (reset = true) {
+         //   output = false;
+       // }
+       // if (preset = true) {output=true;}
         return output;
     }
 
-    public boolean calculateOutput(boolean inData, boolean inClock)
+    public boolean calculateOutput()
     {
-        if((!previous)  && (inClock)) {output = !inData;}
-
-        previous = inClock;
-        data = inData;
-
-        if (reset = true) {
-            output = false;
+        if (Component.relogio.getTroca()==Clock.transition.UP)
+        {
+            output=!data;
         }
-        if (preset = true) {output=true;}
-
         return output;
     }
 
 
-    public Tflipflop(boolean data, boolean clock, boolean output){
+    public void updateData(boolean novo)
+    {
+        data=novo;
+    }
+
+
+
+
+      /*  if (reset = true) {
+            output = false;
+        }
+        if (preset = true) {output=true;} */
+
+
+
+
+    public Tflipflop(boolean data){
         add(); // conta quantidade de componentes
         setType(Type.T); // tipo do componente
         this.data=data;
-        this.clock=clock;
-        this.output=output; // por padrao, set e preset desarmados
-        this.reset=false;
-        this.preset=false;
-        this.previous=clock;
+
+         // por padrao, set e preset desarmados
+        /*this.reset=false;
+        this.preset=false;*/
+
     }
 }

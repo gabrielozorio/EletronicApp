@@ -6,14 +6,36 @@ public class RSflipflop extends Component{
     private boolean r;
     private boolean output;
 
-    private boolean calculateOutput() {
-        if (s && !r) {
-            return true;
-        } else if(!s && r) {
-            return false;
-        } else {
-            return output;
+    public boolean updateOutput() {
+
+        if(Component.relogio.getTroca()==Clock.transition.UP)
+        {
+            if (s && !r) {
+                return true;
+            }
+            if (!s && r) {
+                return false;
+            } else {
+                return output;
+            }
         }
+        return output;
+    }
+
+    public boolean updateOutput(Clock relogio)
+    {
+        if(relogio.getTroca()==Clock.transition.UP)
+        {
+            if (s && !r) {
+                return true;
+            }
+            if (!s && r) {
+                return false;
+            } else {
+                return output;
+            }
+        }
+        return output;
     }
 
 
@@ -21,7 +43,7 @@ public class RSflipflop extends Component{
         setType(Type.RS);
         this.s = s;
         this.r = r;
-        this.output = calculateOutput();
+
     }
 
 

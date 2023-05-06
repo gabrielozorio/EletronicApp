@@ -6,8 +6,26 @@ public class Xor extends Component{
     private boolean input2;
     private boolean output;
 
+    public boolean getOutput() {
+        return output;
+    }
+
+    public void update(boolean n1,boolean n2) {
+        input1=n1;
+        input2=n2;
+        output=this.calculateOutput();
+    }
+
     private boolean calculateOutput(){
-        return ((!input1&&input2)||(input1&&!input2));
+        if ((input1)!=(input2)) {
+            output=true;
+            return output;
+        }
+        else
+        {
+            output=false;
+            return output;
+        }
     }
 
     public Xor(boolean input1, boolean input2)

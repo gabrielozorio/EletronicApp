@@ -1,5 +1,6 @@
 package com.example.eletronicapp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import com.github.barteksc.pdfviewer.PDFView;
 import android.os.Bundle;
@@ -14,13 +15,17 @@ public class PdfActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdf);
-
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(false);
+        }
 
         getData();
         novoPdf = findViewById(R.id.novopdf);
         setData();
 
     }
+
 
     private void getData()
     {
